@@ -1,0 +1,307 @@
+/* Logo Styles */
+body
+{
+  background-color:#F7F7F7;
+  color:#21044D;
+  font-family:"Avenir";
+}
+
+.logo 
+{
+  text-align: center;
+  font-size: 25px;
+  padding: 40px;
+  font-family: "Krungthep";
+}
+
+#slogan 
+  {
+    text-align: center;
+    font-size: 13px;
+    font-family: "Avenir";
+    font-style: medium;
+  }
+.nav
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 5px;
+  font-size: 14px;
+  font-family:"Avenir";
+}
+.nav a{
+  padding: 20px;
+  text-decoration: none;
+  color: #21044D;
+}
+
+/* Header */
+.headerBG 
+{
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-color: #21044D;
+  text-align: center;
+  margin-top: -50px;
+  padding: 35px;
+}
+.quote, .quote1
+{
+   color: white;
+   text-align: center;
+   font-size: 28px;
+   margin-top: 0px;
+   margin-left: 5px;
+}
+.quote1{
+  margin-top: -55px;
+}
+
+.semi, .semi2
+{
+  color: goldenrod;
+  font-family: "Lucida";
+  font-size: 60px;  
+}
+.semi
+{
+  margin-left: -390px;
+  margin-top: 30px;
+}
+.semi2
+{
+  margin-left: 410px;
+  margin-top: -60px;
+}
+.author{
+  color: goldenrod;
+  font-size: 12px;
+  margin-left: 300px;
+  margin-top: -10px;
+
+}
+
+/* Casestudy 1*/
+.casestudy1
+{
+  display: grid;
+  padding: 30px;
+ margin-left: 0 auto;
+  justify-content: center;
+  grid-template-columns:3% 50% 41%;
+  grid-template-areas: "rectangle content image1"
+}
+.BG
+{
+  height: 600px;
+  width: 1600px;
+  background-color: white;
+  margin-top: 15px;
+}
+.image1
+{
+grid-area: image1;
+background-image: url("../images/Knots.png");
+background-repeat: no-repeat;
+background-size: contain;
+margin-top: -10px;
+}
+
+.rectangle
+{
+grid-area: rectangle;
+background-color: #E75B75;
+width:47.97px;
+height: 186.8200px;
+margin-top: -480px;
+margin-left: -10px;
+}
+.content
+{
+grid-area: content;
+align-self: top;
+margin-top: 90px;
+margin-left: -40px;
+}
+
+.role, .head, .head2, .under, .paragraph, .button
+{
+  margin-left: 120px;
+}
+.head
+{
+  margin-top: 3px;
+  font-size: 44px; 
+}
+.head2
+{
+  margin-top: -23px;
+  font-size: 23px; 
+}
+.under
+{
+  width: 84px;
+  height: 3px;
+  background-color: #21044D;
+  margin-top: 40px;
+}
+.paragraph
+{
+  margin-top: 60px;
+  font-size: 18px; 
+  width: 460px;
+}
+.button
+{
+ border-width: 2px;
+ border-color: rgb(39, 4, 92);
+ border-style: solid;
+ background-color: white;
+ width: 241.85px;
+ height: 50.25px;
+ color: #21044D;
+ font-size: 12px;
+ margin-top: 45px;
+} 
+
+/* Casestudy 2*/
+.casestudy2
+{
+  display: grid;
+  padding: 30px;
+  grid-template-columns:47% 50% 3%;
+  grid-template-areas: "image2 content2 rectangle2";
+}
+.BG2
+{
+  height: 600px;
+  width: 1600px;
+  background-color: white;
+  margin-top: 15px;
+  margin-left: -1613px;
+}
+.image2
+{
+grid-area: image2;
+background-image: url("../images/Grants.png");
+background-repeat: no-repeat;
+background-size: contain;
+margin-top: -10px;
+}
+.rectangle2
+{
+grid-area: rectangle2;
+background-color: #6165D7;
+width:47.97px;
+height: 186.8200px;
+margin-top: -480px;
+margin-left: 800px;
+
+}
+.content2
+{
+grid-area: content2;
+align-self: top;
+margin-top: 90px;
+}
+
+
+/* Casestudy 3*/
+.casestudy3
+{
+  display: grid;
+  padding: 30px;
+  justify-content: center;
+  grid-template-columns:3% 50% 41%;
+  grid-template-areas: "rectangle3 content image3"
+}
+.image3
+{
+grid-area: image3;
+background-image: url("../images/pointbank.png");
+background-repeat: no-repeat;
+background-size: contain;
+margin-top: -10px;
+}
+.rectangle3
+{
+grid-area: rectangle2;
+background-color: #F6935C;
+width:47.97px;
+height: 186.8200px;
+margin-top: -480px;
+margin-left: -12px;
+}
+
+
+@media only screen and (max-width: 768px)
+{
+  .casestudy1{
+    grid-template-rows: 350px 300px; 
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image1"
+      "content";
+     }
+
+     .casestudy2{
+      grid-template-rows: 350px 300px; 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "image2"
+        "content2";
+       }
+
+  .casestudy3 {
+    grid-template-rows: 320px 300px; 
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image3"
+      "content";
+     }
+.rectangle, .rectangle2, .rectangle3
+  {
+    display: none;
+  }
+  .role{
+    font-size: 14px;
+    margin-top: 35px;
+  }
+  .head{
+    font-size: 35px;
+    margin-top: 10px;
+  }
+  .head2{
+    font-size: 18px;
+  }
+  .under{
+    scale: 90%;
+    margin-top: 30px;
+  }
+  .paragraph{
+    font-size: 16px;
+    padding-right: 15px;
+  }
+  .content{
+    margin-left: -90px;
+    margin-top: auto;
+  }
+  .content2{
+    margin-left: -90px;
+    margin-top: auto;
+  }
+  .BG{
+  width: auto;
+  height: 750px;
+  margin-top: -570px;
+  }
+  .BG2{
+    width: auto;
+    height: 780px;
+    margin-top: -600px;
+    margin-left: 7px;
+    }
+}
