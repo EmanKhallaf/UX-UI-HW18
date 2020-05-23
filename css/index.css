@@ -110,6 +110,9 @@ background-size: contain;
 margin-top: -10px;
 }
 
+.balloon{
+  background-image: url("../images/balloon.png");
+}
 .rectangle
 {
 grid-area: rectangle;
@@ -236,16 +239,37 @@ margin-top: -480px;
 margin-left: -12px;
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+{ 
+   .BG{
+   width: 850px;
+  }
+   .content2{
+   margin-left: -100px;
+  }
+  .rectangle, .rectangle3{
+  margin-left: 52px;
+  width: 5%;
+  }
+  .rectangle2{
+  margin-left: 515px;;
+  width: 5%;
+  }
+  .content{
+  margin-left: -80px;
+  }
+}
 
-@media only screen and (max-width: 600px)
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 {
-  .casestudy1{
+  .casestudy1
+  {
     grid-template-rows: 350px 300px; 
     grid-template-columns: 1fr;
     grid-template-areas:
       "image1"
       "content";
-     }
+  }
      .casestudy2{
       grid-template-rows: 350px 300px; 
       grid-template-columns: 1fr;
@@ -253,14 +277,14 @@ margin-left: -12px;
         "image2"
         "content2";
        }
-
-  .casestudy3 {
+  .casestudy3
+  {
     grid-template-rows: 320px 300px; 
     grid-template-columns: 1fr;
     grid-template-areas:
       "image3"
       "content";
-     }
+  }
 .rectangle, .rectangle2, .rectangle3
   {
     display: none;
@@ -302,5 +326,5 @@ margin-left: -12px;
     height: 780px;
     margin-top: -600px;
     margin-left: 7px;
-    }
+   }
 }
