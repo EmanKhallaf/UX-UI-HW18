@@ -237,7 +237,7 @@ margin-left: -12px;
 }
 
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 1000px)
 {
   .casestudy1{
     grid-template-rows: 350px 300px; 
@@ -246,7 +246,6 @@ margin-left: -12px;
       "image1"
       "content";
      }
-
      .casestudy2{
       grid-template-rows: 350px 300px; 
       grid-template-columns: 1fr;
