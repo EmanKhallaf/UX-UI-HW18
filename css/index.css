@@ -239,7 +239,7 @@ margin-top: -480px;
 margin-left: -12px;
 }
 
-@media only screen and (max-width: 2000px)
+@media only screen and (max-width: 1000px)
 { 
    .BG{
    width: 850px;
@@ -260,7 +260,7 @@ margin-left: -12px;
 }
 }
 
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 600px)
 {
   .casestudy1
   {
