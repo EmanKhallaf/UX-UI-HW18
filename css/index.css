@@ -237,7 +237,7 @@ margin-left: -12px;
 }
 
 
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 600px)
 {
   .casestudy1{
     grid-template-rows: 350px 300px; 
