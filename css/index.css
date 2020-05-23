@@ -218,7 +218,7 @@ margin-top: 90px;
   display: grid;
   padding: 30px;
   justify-content: center;
-  grid-template-columns:3% 50% 41%;
+  grid-template-columns:3% 52% 39%;
   grid-template-areas: "rectangle3 content image3"
 }
 .image3
